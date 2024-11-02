@@ -1,6 +1,6 @@
 # Домашнее задание по теме "Интроспекция"
 # Цель задания:
-#
+
 # Закрепить знания об интроспекции в Python.
 # Создать персональную функции для подробной интроспекции объекта.
 import sys
@@ -26,7 +26,7 @@ def introspection_info(obj):
     instrospect_dict['Размер объекта в байтах'] = byte_size
     return instrospect_dict
 
-
+'''
 pprint(introspection_info(1),sort_dicts=False)
 print('-----------------------------------')
 pprint(introspection_info("Тестовая строка"),sort_dicts=False)
@@ -35,6 +35,7 @@ pprint(introspection_info(introspection_info),sort_dicts=False)
 print('-----------------------------------')
 pprint(introspection_info(introspect_dict),sort_dicts=False)
 print(dir(introspect_dict))
+'''
 
 number_info = introspection_info(42)
 print(number_info)
